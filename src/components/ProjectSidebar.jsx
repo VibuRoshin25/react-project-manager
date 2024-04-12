@@ -1,4 +1,4 @@
-import React from "react";
+import Button from "./Button";
 
 const ProjectSidebar = () => {
   return (
@@ -7,9 +7,7 @@ const ProjectSidebar = () => {
         Your Projects
       </h2>
       <div>
-        <button className="px-4 py-2 text-xs md:text-base rounded-md bg-teal-700 text-teal-400 hover:bg-teal-600 hover:text-teal-100">
-          + Add Project
-        </button>
+        <Button>+ Add Project</Button>
       </div>
       <ul></ul>
     </aside>
