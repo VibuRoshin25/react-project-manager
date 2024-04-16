@@ -17,7 +17,7 @@ const Tasks = ({ tasks, onAddTask, onDeleteTask }) => {
               <span>{task.text}</span>
               <button
                 className="text-teal-700 hover:text-red-500"
-                onClick={onDeleteTask}
+                onClick={() => onDeleteTask(task.id)}
               >
                 Clear
               </button>
