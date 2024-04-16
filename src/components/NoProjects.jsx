@@ -2,7 +2,7 @@ import noProjectImage from "../assets/no-projects.png";
 import Button from "./Button";
 const NoProjects = ({ onStartAddProject }) => {
   return (
-    <div>
+    <div className="mt-24 text-center w-2/3">
       <img src={noProjectImage} className="w-16 h-16 object-contain mx-auto" />
       <h2 className="text-xl font-bold text-teal-500 my-4">
         No Project Selected
