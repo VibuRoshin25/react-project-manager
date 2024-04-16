@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import Input from "./Input";
 
-const NewProject = ({ handleSave }) => {
+const NewProject = ({ onAdd }) => {
   const title = useRef();
   const description = useRef();
   const dueDate = useRef();
@@ -9,6 +9,12 @@ const NewProject = ({ handleSave }) => {
     const enteredTitle = title.current.value;
     const enteredDescription = description.current.value;
     const enteredDueDate = dueDate.current.value;
+
+    onAdd({
+      title: enteredTitle,
+      description: enteredDescription,
+      dueDate: enteredDueDate,
+    });
   };
   return (
     <div className="w-[35rem] mt-16">
